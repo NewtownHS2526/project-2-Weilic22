@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area Geometry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+    <body class="text-purple-400 bg-purple-100">
+      <main>
+      
+      <h3 class="flex justify-center">Everyone should know the formula to calculate the area of a triangle after 5th grade. So this formula should be familiar:1/2*b*h</h3>
+    <h2 class="flex justify-center">However, there is definitely more than one way to find the same answer.</h2>
+    
+    <p class="flex justify-center">Not everyone is familiar with these formulas:</p>
+    <ol>
+      <li class="p-4 m-4 border-2 border-green-500 flex justify-center text-2xl">Area=S(S-C)(S-B)(S-C)</li>
+      <li class="p-4 m-4 border-2 border-green-500 flex justify-center text-2xl">Area=1/2ABsin(c)</li>
+      <li class="p-4 m-4 border-2 border-green-500 flex justify-center text-2xl">Area=x1(y2-y3)-x2(y1-y3)+x3(y1-y2)</li>
+      <li class="p-4 m-4 border-2 border-green-500 flex justify-center text-2xl">Area=(S-A)(S-B)(S-C)(S-D)</li>
+    </ol>
+    <h1>Formula Explanations</h1>
+    
+    <ol>
+      <li class="p-4 m-4 border border-blue-500">Formula #1 is an accurate way to calculate the area for any triangle with all given side lengths referred to as (A,B, and C). In the formula, the S stands for the semi-perimeter, semi meaning half. The semi-perimeter can be found by (A+B+C)/2. The formula is derived from more simple well known formulas and serious algebraic manipulation. This formula is called "Heron's Formula"</li>
+      <li class="p-4 m-4 border border-blue-500">Formula #2 is actually very similar to the simple triangle area formula stating the area is half the base * height. In formula #2, the sine function comes from drawing an altitude in any triangle to make 2 right angle triangles. In a triangle, the height can be represented using the sine function and a side. This formula can be especially helpful when not enough information is given</li>
+      <li class="p-4 m-4 border border-blue-500">Formula #3 is an abstract formula used for calculating a triangle's area that is defined on a coordinate plane. To many people, it's hard to find the length of the base and height of a triangle with only 3 pairs of coordinates and no visuals. This formula finds the area of triangles defined by coordinate points with no given information about lengths nor angles.</li>
+      <li class="p-4 m-4 border border-blue-500">You might notice Formula #4 is very similar to formula #1. You might think this formula calculates something similar to formula #1 and if you said it calculates a quadrilateral's area, you are correct. However, you might not have known that this formula only works for quadrilaterals that are inscribed inside a circle with all 4 vertices touching the circle. This is because the formula was derived using an inscribed quadrilateral.</li>
+      </ol>
+      </main>
+      <footer>
+      <div class="text-center my-4">
+      <a href="index.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">After you have finished, click here to back to main page</a>
+    </div>
+  </footer>
+    </body>
+    </html>

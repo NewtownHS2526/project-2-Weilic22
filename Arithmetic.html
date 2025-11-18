@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmetic Approximation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+    
+    <body class="bg-purple-100 text-orange-400 m-4 p-5">
+    <main>
+    <section>
+      <dialog open class="fixed p-4 rounded-md shadow-lg w-full text-center text-xl transform scale-150">
+  <p>Welcome to the Approximation page! Check out the problems below and see if you know how to solve it without looking at the steps.</p>
+  <form method="dialog">
+    <button class="mt-2 px-3 py-1 bg-blue-600 text-white rounded">Close</button>
+  </form>
+</dialog>
+    </section>
+
+    <h2 class="flex justify-center text-green-500 font-bold border border-yellow-400 m-4 p-4">An Algebra 1 course prepares students to be able to solve the following:</h2>
+    <div class="flex justify-center">
+    <ul class="border border-black m-4 p-4 list-disc list-inside">
+      <li>Linear equations with 1 variable</li>
+      <li>Quadratic equations</li>
+      <li>Linear systems of equations with 2 variables</li>
+      <li>Quadratic systems of equations with 2 variables</li>      
+    </ul>
+    </div>
+    <h2 class="flex justify-center text-green-500 font-bold border border-yellow-400 m-4 p-4">An Algebra 2 course prepares students to be able to solve the following:</h2>
+    <div class="flex justify-center">
+    <ul class="list-decimal list-inside border border-black m-4 p-4">
+      <li>Larger systems of equation with more than 2 variables</li>
+      <li>Non-linear system of equation(not only quadratic)</li>
+      <li>Specific cubic equations</li>
+      <li>Non-linear equations including natural logarithm (ln), cube roots, and exponential equations</li>
+    </ul>
+    </div>
+
+    <h3 class="flex justify-center text-green-500 font-bold border border-yellow-400 m-4 p-4">However, there are some equations that even advanced high school math courses don't teach students how to solve.</h3>
+    <div class="space-y-6">
+    <p class="writing">A very common problem that confuses students is a cubic equation that is not factorable. <mark>An example being, f(x)=x^3+7x+3</mark></p>
+    <p class="writing"> This cubic polynomial from graph analysis only has 1 real solution that makes f(x)=0. Meaning there is only 1 value that makes x^3+7x+3 equal to 0.</p>
+    <p class="writing">Now you may be wondering, how do I solve this? Well, I have to say that this equation is very hard to solve by hand or even with a low function calculator unable to stack roots inside roots.</p>
+    <p class="writing">You can find the exact value of this equation by using a formula that is so lengthy, people make mistakes from typing it on their phone or calculator. So this is why solving this by exact method is unethical. This page exactly solves that issue!</p>
+    <p class="writing">You can approximate the value of the equation very precisly using a calculus method of approximation. The demonstration of such procedure will be below:</p>
+    <p class="writing">If you take the derivative of any function and draw a tangent line near the point at which the function equals to zero, the straight line approximating the solution to the function is extremely close.</p>
+    <p class="writing">Remember f(x)=x^3+7x+3. It's derivative can be found using a simple rule... Take the power of the variable and multiply the coefficent by it. Then take down the power by 1. the derivative of f(x) is 3x^2+7 and because constants have a power of x^0, anything multiplied by 0 is 0 so it "disappears".</p>
+    <p class="writing">Now that this is the derivative, 3x^2+7. We need to find a value such that f(that #) is pretty close to 0. You should know how to substitute numbers into a function if you have taken Algebra I or II. Testing values of the function, we have this list of numbers:</p>
+    </div>
+    <div class="flex justify-center">
+    <ol class="list-decimal list-inside border-4 border-black m-4 p-4">
+      <li class="py-3">f(-3)=-45</li>
+      <li class="py-3">f(-2)=-19</li>
+      <li class="py-3">f(-1)=-5</li>
+      <li class="p-5 underline border-4 border-red-500 rounded-full">f(-1/2)=-0.625</li>
+      <li class="py-3">f(0)=3</li>
+      </div>
+
+
+    </ol>
+    <div class="space-y-6">
+    <p>The value closest to 0 is -1/2 which means it's the best approximation. Now to draw a tangent line at that position to actually approximate it good. We substitute in -1/2 into 3x^2+7 and get the slope of the line to be 31/4. Now using point slope form of an equation, slope(x-xposition)+yposition makes a line that crosses (xposition,yposition) with the slope.</p>
+    
+    <p>After placing in the values, the approximation tangent line is 31/4(x+1/2)-5/8. If you set this tangent line expression equal to zero, the value of x is a simple linear equation answer. After solving, you would get -13/31 as x. If you want to make your calculations more precise, you can repeat the process.</p>
+    
+    <p>Sub in x=-13/31 into f(x) which gives you f(-13/31)=-275/29791..... Sub in x=-13/31 into derivative equation 3x^2+7 which equals 7234/961. Substitute into point slope form:7234/961(x+13/31)-275/29791</p>
+    
+      <p class="final">The final step is to solve the equation for zero. The solution in fraction is -93767/224254. Into decimals, the answer is approximately</p> <p class="Appr">-0.4181285506613</p>
+      
+    <p class="final">The real solution to the equation calculated by a software is -0.4181282993... which means this fractional approximation has 5 digits of accuracy after the decimal. If you want an exact value using the trigonometric method, then visit a different webpage (Solving complex equations).</p>
+    </div>
+    </main>
+    <footer>
+    <div class="flex flex-col space-y-4 mt-8 items-center">
+    <a href="Equation.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Solving complex equations</a>
+    <a href="index.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">After you have finished, click here to back to main page</a>
+    </div>
+    </footer>
+    </body>
+    </html>

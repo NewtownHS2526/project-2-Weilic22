@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex Equations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  
+  <body class="bg-purple-100 text-blue-500 p-5 m-4">
+    <main>
+    <h2 class="text-orange-400 flex justify-center text-xl py-5 border-2 border-red-500">Take a look at this equation: 3x^3 + 5x^2 - 13x + 3=0</h2>
+    <h3>At first sight, many don't have any method of solving this effectively.</h3>
+    <p>The cubic expression is not factorable and the equation has no rational solution. So what do we do?</p>
+    <p>Most people will go and search up the cubic equation formula, but that doesn't look too good because the formula is so long it literally is unable to be copied on a piece of regular size paper. </p>
+    <figure class="mx-auto text-center my-6">
+      <img src="cubic_formula.png" alt="Cubic Formula" class="border-4 border-green-500 p-6 mx-5"/>
+      <figcaption>Cubic formula</figcaption>
+    </figure>
+    <p>The sheer complexity of this formula makes it unethical to use. many calculators can not type the imaginary unit contained in the formula and the stacked roots are extremely difficult to get correct.</p>
+    <h1 class="flex justify-center font-bold m-6 p-6 ">The question is How is it solved?</h1>
+    <h2>This is how to solve a general cubic with all coefficents not equal to zero</h2>
+    <p>Starting off, this cubic needs to be depressed, meaning it's x^2 term no longer appears in the cubic. To depress the cubic, replace every x in the equation 3x^3 + 5x^2 - 13x + 3 = 0 with a value y - b/3a.</p>
+    <p>In this case, b is equal to 5 and a is equal to 3. The replacement for x is y-5/9. After replacing, the expansion process is very tedious work so the process will be redacted.</p>
+    <h3 class="text-orange-400 flex justify-center text-xl py-5">The result after expansion is 3y^3 - 142/9y + 8202/729=0</h3>
+    <p> The next step in solving the cubic is to factor out the 3 from all terms so that y^3 has a coefficent of 1</p>
+    <h3>After factoring, the equation becomes 3(y^3 - 142/27y + 2734/729)=0</h3>
+    <p>Now divide both sides by 3. Leaving y^3 - 142/27y + 2734/729=0</p>
+    <p>A depressed cubic has a much simpler formula being this:</p>
+    <div class="flex justify-center">
+    <img class="border-4 border-green-500 flex justify-center mx-auto w-2/3" src="cubic.png" alt="DepressedCubicFormula" />
+    </div>
+    <p>Now people might try to substitute the values into this formula, but they will find a <mark class="text-red-500 font-bold">serious problem</mark>. This formula gives an output that has imaginary numbers, but from graph analysis, there are only real roots. This is the time to switch methods to trigonometry.</p>
+    <p>The following steps will not be explained.</p>
+    <ol class="list-decimal">
+      <li class="my-5 p-4 border-2 border-black">value of z is defined by sqr(-4q/3). After substituting values into the expression, z is approximately 2.6480833972918</li>
+      <li class="my-5 p-4 border-2 border-black">the value of cos(3θ) can be found using -sqr(27r^2/-4q^3). After substituting values into the expression, cos(3θ)=-0.80785980055745</li>
+      <li class="my-5 p-4 border-2 border-black">the value of θ can be found by cos^-1(-0.80785980055745)/3. This value is approximately 47.962450698923.</li>
+      <li class="my-5 p-4 border-2 border-black">To find one solution, use the expression z*cos(θ). This evaluates to approximately 1.7732029557704</li>
+      <li class="my-5 p-4 border-2 border-black">To find 2nd solution, use the expression z*cos(θ+120). This evaluates to approximately -2.5898550460583</li>
+      <li class="my-5 p-4 border-2 border-black">To find 3rd solution, use the expression z*cos(θ+120+120). This evaluates to approximately 0.81665209028785</li>
+    </ol>
+    
+    <h3>These are <mark class="font-bold underline bg-red-300">not the solutions</mark> to the original equation because the numbers obtained are the solutions are for the modified equation. Remember x=y- 5/9</h3>
+    <ol>
+      <li class="text-red-500 font-bold p-6 py-2 m-4 border-4 text-xl border-orange-400 rounded-full flex justify-center">Solution:1.2176474002148</li>
+      <li class="text-red-500 font-bold p-6 py-2 m-4 border-4 text-xl border-orange-400 rounded-full flex justify-center">Solution:-3.1454106016139</li>
+      <li class="text-red-500 font-bold p-6 py-2 m-4 border-4 text-xl border-orange-400 rounded-full flex justify-center">Solution:0.26109653473229</li>
+    </ol>
+    </main>
+
+    <footer>
+    <aside class="bg-gray-300 p-4 mt-6">
+  <h2 class="font-semibold">Related Topics</h2>
+  <ul class="list-disc list-inside">
+    <li>Solving exponential equations</li>
+    <li>Visualizing functions</li>
+    <li>Math resources</li>
+  </ul>
+</aside>
+    <div class="text-center">
+    <h2 class="text-center mb-4">That's the complexity of solving a cubic equation.</h2>
+  <a href="index.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">After you have finished, click here to back to main page</a>
+  </div>
+
+</footer>
+  </body>
+  </html>
